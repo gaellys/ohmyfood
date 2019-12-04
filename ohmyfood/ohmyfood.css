@@ -22,6 +22,7 @@ a, a:hover, a:visited, a:active
 
   h1{
     color: #FDCB46;
+    text-decoration:none;
   }
   
   #menu_Accueil{
@@ -38,13 +39,21 @@ a, a:hover, a:visited, a:active
   article:hover {
     overflow:hidden;
     display:block;
-    width:485px; 
+    width:485px;
+    height: 380px; 
     text-align: center;
     display: flex;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 2s;
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
   
   }
  
@@ -230,7 +239,6 @@ a, a:hover, a:visited, a:active
     position: relative;
     animation-name: shake;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     cursor: pointer;
     
